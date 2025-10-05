@@ -13,10 +13,13 @@ body {
   color: #333;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
 section {
-  display: inline-block;
-  min-width: 33%;
-  margin: 20px;
+  margin: 20px 40px;
 }
 
 h2 {
@@ -25,10 +28,30 @@ h2 {
   border-bottom: 3px solid lightgray;
 }
 
-/* Colour Style Guide */
-
-.colours {
+.colours,
+.fonts {
   list-style-type: none;
+}
+
+.colour,
+.font {
+  padding: 0 10px;
+  margin: 30px 0;
+}
+
+.colour-name,
+.font-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #143548;
+}
+
+/* Colours Style Guide */
+
+.colour-wheel,
+.colour-name,
+.colour-hex {
+  display: inline-block;
 }
 
 .colour {
@@ -36,14 +59,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  padding: 0 10px;
-  margin: 30px 0;
 }
 
-.colour-wheel,
-.colour-name,
-.colour-hex {
-  display: inline-block;
+.colour div {
+  margin: 0 20px;
 }
 
 .colour-wheel {
@@ -76,14 +95,36 @@ h2 {
   background-color: #77848e;
 }
 
-.colour-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #143548;
-}
-
 .colour-hex {
   font-size: 0.8rem;
   font-style: italic;
   color: gray;
+}
+
+/* Fonts Style Guide */
+
+.font-plain,
+.font-bold,
+.font-italic {
+  line-height: 2.4rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
 }
