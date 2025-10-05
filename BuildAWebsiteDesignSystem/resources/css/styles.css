@@ -19,6 +19,7 @@ main {
 }
 
 section {
+  min-width: 400px;
   margin: 20px 40px;
 }
 
@@ -33,12 +34,15 @@ h2 {
   list-style-type: none;
 }
 
+h3,
 .colour,
-.font {
+.font,
+.text {
   padding: 0 10px;
   margin: 30px 0;
 }
 
+h3,
 .colour-name,
 .font-name {
   font-size: 1.2rem;
